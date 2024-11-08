@@ -3,7 +3,7 @@ import React, { useState } from "react"
 import NavBar from "../components/Navbar"
 
 const MainLayout = ({ children }) => {
-  const [isSidebarVisible, setSidebarVisible] = useState(true)
+  const [isSidebarVisible, setSidebarVisible] = useState(false)
 
   const toggleSidebar = () => {
     setSidebarVisible(!isSidebarVisible)
