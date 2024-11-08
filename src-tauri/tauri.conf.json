@@ -55,10 +55,8 @@
       "endpoints": [
         "https://api.github.com/repos/Liang-Chu/sagsc-toolbox/releases/latest"
       ],
-      "pubkey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAraJlPa0joPhWxgpZhWwXWMLdkbUEJICV1U2XBCL1g/lEPsTCu/IxGLQo+bCY69dVq2qErylDPvH3N7OkAfFJhcQFhQ2OsSIFfpiNaefXIh6xjvB+XsTowGtwxFZCc/yjdZmgcI0LpBVtfhZd1ExHiggjMFShgazVMSRJrmlXEfB4sjbwtNoxqrD4VJtE3gaxysSrZlL0Pi3emos8nW4YmhTGHqCEXcX//gWY07ImWzqNQ0J4vWELu2VPIOb36j8Sl7Lf5a/it6l5O/AsQIEB5MEIeXbIoTXs8GB1evNezfXju7gCghKDWgO2emAmjznwygefWf1pnqdLXL6aPBdThQIDAQAB",
-      "signature": {
-        "privateKey": "C:/path/to/private-key-no-pass.pem"
-      }
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDE4RDFBQkY2NTk2NUI3N0MKUldSOHQyVlo5cXZSR0VNM2ZvSGQxS1VJYVdVMzdwbGlIOXhUdUlKamhrRXlnMkZBVnlNQzAzbUgK"
+
     },
     "windows": [
       {
