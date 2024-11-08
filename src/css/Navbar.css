@@ -1,55 +1,49 @@
-/* Navbar.css */
-
+/* Navbar Styles */
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    background-color: #f0f0f0;
-    overflow: hidden;
-    transition: width 0.3s;
-    z-index: 10; /* Ensure navbar is on top */
-  }
-  
-  .navbar.expanded {
-    width: 200px;
-  }
-  
-  .navbar.collapsed {
-    width: 0;
-  }
-  
-  /* Navbar links */
-  .navbar-links {
-    list-style-type: none;
-    padding: 1rem;
-    margin: 0;
-  }
-  
-  .navbar-links li {
-    margin: 0.5rem 0;
-  }
-  
-  .navbar-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
-  
-  /* Toggle button */
-  .toggle-btn {
-    position: fixed;
-    top: 1rem;
-    left: 1rem;
-    padding: 0.5rem;
-    background-color: #ddd;
-    border: none;
-    cursor: pointer;
-    z-index: 15; /* Ensure button is on top */
-  }
-  
-  /* Content styling */
-  .content {
-    padding-left: 20px; /* Small padding to avoid overlap with button */
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh; /* Take full height */
+  background-color: #f0f0f0;
+  overflow: hidden;
+  transition: width 0.3s ease;
+  z-index: 10; /* Ensure navbar is on top of the content */
+}
+
+.navbar.expanded {
+  width: 200px; /* Expanded navbar width */
+}
+
+.navbar.collapsed {
+  width: 0; /* Collapsed navbar width */
+}
+
+/* Navbar links */
+.navbar-links {
+  list-style-type: none;
+  padding: 1rem;
+  margin: 0;
+}
+
+.navbar-links li {
+  margin: 0.5rem 0;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Toggle button */
+.toggle-btn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0.1rem;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 15; /* Ensure button is on top of navbar */
+}
+

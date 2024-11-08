@@ -6,6 +6,7 @@ import { useLocation } from "react-router-dom";
 import ExcelTools from "./pages/ExcelTools";
 import { navOptions } from "./assets/Links";
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

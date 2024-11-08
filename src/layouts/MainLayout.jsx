@@ -12,15 +12,13 @@ const MainLayout = ({ children }) => {
   return (
     <div className="App">
       <NavBar isVisible={isSidebarVisible} />
-      <button 
-        onClick={toggleSidebar} 
-        className={`toggle-btn ${isSidebarVisible ? 'expanded' : 'collapsed'}`}
+      <button
+        onClick={toggleSidebar}
+        className={`toggle-btn ${isSidebarVisible ? "expanded" : "collapsed"}`}
       >
         {isSidebarVisible ? "<<" : ">>"}
       </button>
-      <main className="content">
-        {children}
-      </main>
+      <main className="main-container ">{children}</main>
     </div>
   )
 }

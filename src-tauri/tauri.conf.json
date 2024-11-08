@@ -58,7 +58,7 @@
     },
     "windows": [
       {
-        "fullscreen": true,
+        "fullscreen": false,
         "resizable": true,
         "title": "sagsc_toolbox"
       }

@@ -62,9 +62,9 @@ const ExcelTools = () => {
   }
 
   return (
-    <div className="home-container">
+    <div className="body-container">
       <h1>ExcelTools</h1>
-      <div className="file-upload">
+      <div className="file-upload ">
         <input
           type="file"
           accept=".xls,.xlsx"
@@ -85,14 +85,18 @@ const ExcelTools = () => {
 
       {/* Show the additional options if "Unloading Plan" is selected */}
       {fileType === "Unloading Plan" && (
-        <div className="unloading-plan-options">
-          <button className="option-button" onClick={handleAddU}>
-            Add U#
-          </button>
+        <div className=" w-100 p-0 m-0 d-flex row mt-4  ">
+          <div className="col-6 p-0">
+            <button className="option-button" onClick={handleAddU}>
+              Add U#
+            </button>
+          </div>
           {/*<button className="option-button">Find Missing</button>*/}
-          <button className="option-button" onClick={() => handleUnmerge(6)}>
-            Unmerge
-          </button>
+          <div className="col-6 p-0">
+            <button className="option-button" onClick={() => handleUnmerge(6)}>
+              Unmerge
+            </button>
+          </div>
         </div>
       )}
     </div>

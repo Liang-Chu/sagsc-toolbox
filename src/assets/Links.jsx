@@ -1,8 +1,8 @@
 // Define navigation routes and configurations
 
 export const navOptions = {
-    Home: "/",
-    ExcelTools: "/Excel-Tools",
+    ExcelTools: "/",//"/Excel-Tools",
+    Home: "/Home",
 };
 
 export const links = {
