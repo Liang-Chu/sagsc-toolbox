@@ -50,15 +50,17 @@
       "csp": null
     },
     "updater": {
-      "active": false
+      "active": false,
+      "dialog": true,
+      "endpoints": [
+        "https://api.github.com/repos/Liang-Chu/sagsc-toolbox/releases/latest"
+      ]
     },
     "windows": [
       {
-        "fullscreen": false,
-        "height": 600,
+        "fullscreen": true,
         "resizable": true,
-        "title": "sagsc_toolbox",
-        "width": 800
+        "title": "sagsc_toolbox"
       }
     ]
   }
