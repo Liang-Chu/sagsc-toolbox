@@ -27,3 +27,7 @@ Thumbs.db
 
 # Tauri build outputs
 src-tauri/target/
+
+# Ignore private key files
+~/.tauri/myapp.key
+~/.tauri/myapp.key.pub
