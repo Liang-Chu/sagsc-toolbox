@@ -1,0 +1,399 @@
+.App {
+  display: flex;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100vw !important; /* Ensure App covers the full height */
+  height: 100vh !important; /* Ensure App covers the full height */
+}
+.main-container {
+  position: fixed;
+  width: 100vw; /* Keep width 100% so it doesn’t shrink */
+  height: 100% !important;
+  padding: 5%;
+  transition: margin-left 0.3s ease-in-out; /* Smooth transition when navbar expands */
+}
+
+:root {
+  --bs-primary: #e7894a;
+  --bs-link-color: #6c757d;
+  --bs-link-hover-color: #e7894a;
+  --brand-color: #e7894a;
+  --brand-container-color: #f7e3d4;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.color-black {
+  color: black !important;
+}
+.color-white {
+  color: white !important;
+}
+.test-border {
+  border: 2px solid red !important; /* 2px width, solid red border */
+}
+.bg-gray {
+  background-color: gray !important;
+}
+.bg-white {
+  background-color: white !important;
+}
+
+.brand-color {
+  color: var(--brand-color);
+}
+
+.brand-color-bg {
+  background-color: var(--brand-color);
+}
+.brand-container-bg-color {
+  background-color: var(--brand-container-color);
+}
+
+.modal {
+  --bs-modal-width: 100%;
+  --bs-modal-bg: transparent;
+  --bs-modal-border-color: none;
+}
+.color-white {
+  color: white !important;
+}
+.color-black {
+  color: black !important;
+}
+
+.color-gray {
+  background-color: gray;
+}
+.login-modal-container .modal-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
+.bg-light-gray {
+  background-color: #eeeeee;
+}
+
+.clickable-text {
+  text-decoration: none; /* Remove default underline */
+  color: inherit; /* Inherit font color from parent element */
+  cursor: pointer; /* Set cursor to pointer always */
+}
+.clickable-text:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.text-decoration-none {
+  text-decoration: none !important;
+}
+
+.fw-100 {
+  font-weight: 100 !important;
+}
+.fw-200 {
+  font-weight: 200 !important;
+}
+.fw-300 {
+  font-weight: 300 !important;
+}
+.fw-400 {
+  font-weight: 400 !important;
+}
+.fw-450 {
+  font-weight: 450 !important;
+}
+.fw-500 {
+  font-weight: 500 !important;
+}
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+.fw-700 {
+  font-weight: 700 !important;
+}
+.fw-800 {
+  font-weight: 800 !important;
+}
+.fw-900 {
+  font-weight: 900 !important;
+}
+.fw-1000 {
+  font-weight: 1000 !important;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.display-1 {
+  font-size: 2.4vw !important;
+  font-weight: 300;
+}
+
+.display-2 {
+  font-size: 2.2vw !important;
+  font-weight: 300;
+}
+.display-3 {
+  font-size: 2vw !important;
+  font-weight: 300;
+}
+
+.display-4 {
+  font-size: 1.8vw !important;
+  font-weight: 300;
+}
+.display-5 {
+  font-size: 1.6vw !important;
+  font-weight: 300;
+}
+.display-6 {
+  font-size: 1.8vw !important;
+  font-weight: 300;
+}
+
+.display-7 {
+  font-size: 1.2vw !important;
+  font-weight: 300;
+}
+
+.display-8 {
+  font-size: 1vw !important;
+  font-weight: 300;
+}
+.display-9 {
+  font-size: 0.8vw !important;
+  font-weight: 300;
+}
+
+.display-10 {
+  font-size: 0.7vw !important;
+  font-weight: 300;
+}
+
+@media (max-width: 1400px) {
+  .display-1 {
+    font-size: 37px !important;
+  }
+
+  .display-2 {
+    font-size: 34px !important;
+  }
+  .display-3 {
+    font-size: 31px !important;
+  }
+
+  .display-4 {
+    font-size: 28px !important;
+  }
+  .display-5 {
+    font-size: 25px !important;
+  }
+  .display-6 {
+    font-size: 22px !important;
+  }
+
+  .display-7 {
+    font-size: 19px !important;
+  }
+
+  .display-8 {
+    font-size: 16px !important;
+  }
+  .display-9 {
+    font-size: 13px !important;
+  }
+
+  .display-10 {
+    font-size: 10px !important;
+  }
+}
+
+.autoflow-container {
+  max-width: 100% !important;
+  overflow: auto !important;
+  scrollbar-width: auto; /* Firefox */
+  scrollbar-color: #888 #f1f1f1; /* Firefox */
+}
+
+.max-height-100vh {
+  max-height: 100vh !important;
+}
+.default-bg {
+  background-color: #fffcf9ed;
+}
+
+.h-100vh {
+  height: 100vh !important;
+}
+.w-20 {
+  width: 20% !important;
+}
+.w-30 {
+  width: 30% !important;
+}
+.w-50 {
+  width: 50% !important;
+}
+
+.display-0 {
+  font-size: calc(1.4rem + 1.3vw) !important;
+}
+
+.display-1 {
+  font-size: calc(1.3rem + 1.2vw) !important;
+}
+
+.display-2 {
+  font-size: calc(1.2rem + 1.1vw) !important;
+}
+
+.display-3 {
+  font-size: calc(1.1rem + 1vw) !important;
+}
+
+.display-4 {
+  font-size: calc(1rem + 0.9vw) !important;
+}
+
+.display-5 {
+  font-size: calc(0.9rem + 0.8vw) !important;
+}
+
+.display-6 {
+  font-size: calc(0.8rem + 0.7vw) !important;
+}
+
+.display-7 {
+  font-size: calc(0.7rem + 0.6vw) !important;
+}
+
+.display-8 {
+  font-size: calc(0.6rem + 0.5vw) !important;
+}
+
+.display-9 {
+  font-size: calc(0.5rem + 0.4vw) !important;
+}
+.search-input:focus {
+  outline: none; /* Remove the blue circle outline */
+  box-shadow: none; /* Remove any box shadow if present */
+}
+.img-fit-width {
+  object-fit: "fill" !important;
+  width: 100% !important;
+  height: auto !important;
+}
+.max-height-100vh {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden; /* Prevent overflow */
+}
+
+.img-fit-height {
+  object-fit: cover; /* Ensure the content scales appropriately */
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+.dencity-indicator-container {
+  position: absolute; /* Position relative to the nearest positioned ancestor */
+  bottom: 2vw; /* Distance from the bottom */
+  right: 2vw; /* Distance from the right */
+  width: 7vw;
+  height: auto;
+}
+
+.text-container {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  width: 100%; /* Full width */
+  position: relative; /* Create a positioning context */
+}
+
+.text-image {
+  width: 100%; /* Ensure the image fills the container */
+  height: auto; /* Maintain aspect ratio */
+}
+.text-container {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: flex-start; /* Align children to the top */
+  width: 100%; /* Full width */
+  height: auto;
+  position: relative; /* Create a positioning context */
+  overflow: hidden; /* Prevent overflow */
+}
+
+.text-image {
+  width: 100%; /* Ensure the image fills the container */
+  height: auto; /* Maintain aspect ratio */
+  position: absolute; /* Use absolute positioning to overlay text */
+  top: -50%;
+}
+.text-text {
+  position: absolute; /* Use absolute positioning to overlay text */
+  top: 30%; /* Position it to leave the bottom 40% of the container */
+  left: 0; /* Align to the left edge */
+  right: 0; /* Align to the right edge */
+  width: 100%; /* Ensure it spans the full width of the container */
+  color: white; /* Text color */
+  padding: 0.5rem; /* Padding for readability, adjust as necessary */
+  height: auto;
+  margin: 0; /* Remove default margin */
+  text-align: center; /* Center text */
+}
+.w-100 {
+  width: 100% !important;
+}
+.body-container {
+  width: 100% !important;
+  height: 100% !important;
+}
