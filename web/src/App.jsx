@@ -1,8 +1,7 @@
-import React, { useState, createContext, useEffect, useContext } from "react"
+import React, { useState, useEffect } from "react"
 import Home from "./pages/Home"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import MainLayout from "./layouts/MainLayout"
-import { useLocation } from "react-router-dom"
 import ExcelTools from "./pages/ExcelTools"
 import { navOptions } from "./assets/Links"
 import "./App.css"
@@ -10,6 +9,9 @@ import "bootstrap/dist/css/bootstrap.min.css"
 
 import { check } from "@tauri-apps/plugin-updater"
 import { relaunch } from "@tauri-apps/plugin-process"
+
+// Import the entire package.json as a module
+import packageJson from "../package.json" 
 
 function App() {
   const [updateInfo, setUpdateInfo] = useState(null)
@@ -27,6 +29,7 @@ function App() {
         setUpdateInfo(update)
       } else {
         console.log("No updates available")
+        setUpdateInfo(null) // Reset if no update
       }
     } catch (error) {
       console.error("Error checking for updates:", error)
@@ -94,20 +97,31 @@ function App() {
         </Routes>
 
         {/* Show update information if available */}
-        {updateInfo && !downloading ? (
-          <div className="update-info border">
-            <p>
-              An update is available: {updateInfo.version} - {updateInfo.body}
-            </p>
-            <button onClick={downloadAndInstallUpdate}>Update Now</button>
-          </div>
-        ) : downloading ? (
-          <div className="downloading-info">
-            <p>Downloading update... {Math.round(downloadProgress)}%</p>
-          </div>
-        ) : (
-          <p>No updates available.</p>
-        )}
+        <div className="version-info">
+          <p>Current Version: {packageJson.version}</p>
+          {updateInfo ? (
+            <div className="update-info border">
+              <p>
+                Update available: {updateInfo.version} - {updateInfo.body}
+              </p>
+              <button onClick={downloadAndInstallUpdate}>Update Now</button>
+            </div>
+          ) : (
+            <p>No updates available.</p>
+          )}
+
+          {/* Button to manually check for updates */}
+          <button onClick={checkForUpdates} className="check-update-btn">
+            Check for Updates
+          </button>
+
+          {/* Show download progress if updating */}
+          {downloading && (
+            <div className="downloading-info">
+              <p>Downloading update... {Math.round(downloadProgress)}%</p>
+            </div>
+          )}
+        </div>
       </Router>
     </div>
   )
