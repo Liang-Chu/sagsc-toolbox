@@ -1,6 +1,6 @@
 {
-  "name": "sagsc-toolbox0.0.3",
-  "version": "0.0.3",
+  "name": "sagsc-toolbox0.0.4",
+  "version": "0.0.4",
   "scripts": {
     "dev": "concurrently \"npm run dev --prefix web\" \"npm run tauri dev\"",
     "build": "npm run build --prefix web && npm run tauri build",

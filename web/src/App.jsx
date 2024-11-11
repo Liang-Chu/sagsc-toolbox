@@ -43,22 +43,24 @@ function App() {
       // Start the update process
       await updateInfo.downloadAndInstall((event) => {
         switch (event.event) {
-          case 'Started':
+          case "Started":
             contentLength = event.data.contentLength
             console.log(`Started downloading ${contentLength} bytes`)
             break
-          case 'Progress':
+          case "Progress":
             downloaded += event.data.chunkLength
             setDownloadProgress((downloaded / contentLength) * 100)
             console.log(`Downloaded ${downloaded} of ${contentLength}`)
             break
-          case 'Finished':
-            console.log('Download finished')
+          case "Finished":
+            console.log("Download finished")
+            break
+          default:
             break
         }
       })
 
-      console.log('Update installed')
+      console.log("Update installed")
       await relaunch() // Relaunch the app after installing the update
       setDownloading(false)
     }
@@ -93,7 +95,7 @@ function App() {
 
         {/* Show update information if available */}
         {updateInfo && !downloading ? (
-          <div className="update-info">
+          <div className="update-info border">
             <p>
               An update is available: {updateInfo.version} - {updateInfo.body}
             </p>
