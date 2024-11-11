@@ -42,7 +42,7 @@
         "https://github.com/Liang-Chu/sagsc-toolbox/releases/latest"
       ],
       "windows": {
-        "installMode":"quiet"
+        "installMode":"passive"
       }
     }
   }
