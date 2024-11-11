@@ -15,7 +15,7 @@ function App() {
       try {
         const update = await check();
         if (update) {
-          console.log(`Found update: ${update}`);
+          console.log(`Found update: ${update.version}`);
           // You can display a notification or prompt the user to update
         } else {
           console.log("No updates available");
