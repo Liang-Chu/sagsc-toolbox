@@ -42,7 +42,7 @@
       "dialog": true,
       "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEYzQzIyM0Y2MzRBNTBGODAKUldTQUQ2VTA5aVBDODVSNXhMRGlBOG9uaHhuRFFvMEVCU1B4QUZuWFB0bElrNVM0SXQ1NnNjY1UK",
       "endpoints": [
-        "https://github.com/Liang-Chu/sagsc-toolbox/releases/download/0.1.6/latest.json"
+        "https://github.com/Liang-Chu/sagsc-toolbox/releases/download/latest.json/latest.json"
       ],
       "windows": {
         "installMode":"passive"
